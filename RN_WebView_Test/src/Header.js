@@ -38,11 +38,15 @@ const Header = () => {
     <>
       <StatusBar barStyle={'dark-content'} backgroundColor={'#fff'} />
       <View style={styles.container}>
-        <Pressable style={styles.buttonContainer('flex-start')}>
+        <Pressable
+          style={styles.buttonContainer('flex-start')}
+          onPress={() => alert('under development')}>
           <BackIcon width={18} height={20} color={'#313B49'} />
         </Pressable>
         <Text style={styles.title}>자유톡</Text>
-        <Pressable style={styles.buttonContainer('flex-end')}>
+        <Pressable
+          style={styles.buttonContainer('flex-end')}
+          onPress={() => alert('under development')}>
           <BellIcon width={18} height={20} color={'#AFB9CA'} />
         </Pressable>
       </View>
